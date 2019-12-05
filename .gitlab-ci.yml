@@ -17,4 +17,4 @@ deploy:
     - yarn build
     - mv dist public
     - npm i -g netlify-cli
-    - netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod
+    - node netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod
