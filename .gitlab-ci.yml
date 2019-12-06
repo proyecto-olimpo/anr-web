@@ -15,5 +15,4 @@ deploy:
   script:
     - yarn install
     - yarn build
-    - mv dist public
     - netlify deploy --site $NETLIFY_SITE_ID --auth $NETLIFY_AUTH_TOKEN --prod
